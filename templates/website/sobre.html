@@ -1,0 +1,19 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+    <h2>Sobre o Projeto</h2>
+
+    <div class="secao-info">
+        <h3>{{ info.titulo }}</h3>
+        <p>{{ info.historia }}</p>
+    </div>
+
+    <div class="secao-info">
+        <h4>Autores do Projeto</h4>
+        <ul>
+            {% for autor in info.autores %}
+                <li>{{ autor }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

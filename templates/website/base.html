@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Equipe</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Site da Equipe</h1>
+        <nav>
+            <a href="{% url 'inicio' %}">Início</a>
+            <a href="{% url 'equipe' %}">Equipe</a>
+            <a href="{% url 'sobre' %}">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Projeto de PSI</p>
+    </footer>
+</body>
+</html>
