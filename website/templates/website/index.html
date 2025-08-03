@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seleção Brasileira</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+</head>
+<body>
+    <header>
+        <h1>🇧🇷 Jogadores da Seleção Brasileira</h1>
+    </header>
+
+    <main>
+        <section class="jogador">
+            <img src="{% static 'imagens/neymar.jpg' %}" alt="Neymar Jr">
+            <h2>Neymar Jr</h2>
+            <p>Posição: Atacante</p>
+            <p>Clube: Al-Hilal</p>
+        </section>
+
+        <section class="jogador">
+            <img src="{% static 'imagens/vinicius.jpg' %}" alt="Vinícius Jr">
+            <h2>Vinícius Jr</h2>
+            <p>Posição: Atacante</p>
+            <p>Clube: Real Madrid</p>
+        </section>
+
+        <!-- Você pode adicionar mais jogadores aqui -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Site da Seleção Brasileira</p>
+    </footer>
+</body>
+</html>
