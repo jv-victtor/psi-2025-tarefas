@@ -1,0 +1,22 @@
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <h2>Nossa Equipe</h2>
+    <p>Conheça os jogadores que fazem parte do nosso time.</p>
+
+    <div class="container-equipe">
+        {% for atleta in atletas %}
+            <div class="card-atleta">
+                <div class="imagem-wrapper">
+                    <img src="{% static atleta.foto %}" alt="Foto de {{ atleta.nome }}">
+                </div>
+                <h3>{{ atleta.nome }}</h3>
+                <p><strong>Idade:</strong> {{ atleta.idade }} anos</p>
+                <p><strong>Posição:</strong> {{ atleta.posicao }}</p>
+                <p><strong>Nascimento:</strong> {{ atleta.nascimento }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
